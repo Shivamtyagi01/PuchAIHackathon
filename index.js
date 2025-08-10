@@ -15,7 +15,7 @@ const MY_PHONE_NUMBER = process.env.MY_NUMBER;
 
 // --- The MCP Validate Tool ---
 // This is the endpoint Puch AI will call to authenticate your server.
-app.post('/mpc/validate', (req, res) => {
+app.post('/mcp/validate', (req, res) => {
     const authHeader = req.headers['authorization'];
     const token = authHeader && authHeader.split(' ')[1];
 
